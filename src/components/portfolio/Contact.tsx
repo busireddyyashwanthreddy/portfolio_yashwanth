@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import { profile } from "@/lib/portfolio-data";
 
 export function Contact() {
@@ -45,8 +46,8 @@ export function Contact() {
 
             <div className="mt-8 flex items-center justify-center gap-3">
               {[
-                { Icon: Github, href: profile.github, label: "GitHub" },
-                { Icon: Linkedin, href: profile.linkedin, label: "LinkedIn" },
+                { Icon: GithubIcon, href: profile.github, label: "GitHub" },
+                { Icon: LinkedinIcon, href: profile.linkedin, label: "LinkedIn" },
               ].map(({ Icon, href, label }) => (
                 <a
                   key={label}

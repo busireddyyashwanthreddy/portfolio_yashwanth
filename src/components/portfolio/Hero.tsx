@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { ArrowDownRight, Github, Linkedin, Mail } from "lucide-react";
+import { ArrowDownRight, Mail } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "./BrandIcons";
 import profileImg from "@/assets/profile.jpeg";
 import { profile, stats } from "@/lib/portfolio-data";
 
@@ -61,8 +62,8 @@ export function Hero() {
             </a>
             <div className="flex items-center gap-2 ml-2">
               {[
-                { Icon: Github, href: profile.github },
-                { Icon: Linkedin, href: profile.linkedin },
+                { Icon: GithubIcon, href: profile.github },
+                { Icon: LinkedinIcon, href: profile.linkedin },
                 { Icon: Mail, href: `mailto:${profile.email}` },
               ].map(({ Icon, href }, i) => (
                 <a
